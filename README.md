@@ -1,7 +1,6 @@
 # .NET Core - Options Pattern
-Options Pattern implementation with .NET Core
 
-2 ways to read configuration:
+There are 2 ways to read configuration:
 1. Using IConfiguration
 2. Using IOptions
 
