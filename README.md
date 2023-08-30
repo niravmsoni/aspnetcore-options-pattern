@@ -1,10 +1,11 @@
 # .NET Core - Options Pattern
 
 There are 2 ways to read configuration:
-1. Using IConfiguration
-2. Using IOptions
 
-Using IConfiguration:
+    1. Using IConfiguration
+    2. Using IOptions
+
+1. Using IConfiguration:
 
 	Pros:
 		It's easier. Need to inject this service in required Controller/Service.
