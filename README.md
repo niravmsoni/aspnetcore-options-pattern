@@ -1,11 +1,11 @@
-# aspnetcore-options-pattern
-Options Pattern implementation with .NET Core
+# .NET Core - Options Pattern
 
-2 ways to read configuration:
-1. Using IConfiguration
-2. Using IOptions
+There are 2 ways to read configuration:
 
-Using IConfiguration:
+    1. Using IConfiguration
+    2. Using IOptions
+
+1. Using IConfiguration:
 
 	Pros:
 		It's easier. Need to inject this service in required Controller/Service.
