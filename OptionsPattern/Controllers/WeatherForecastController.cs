@@ -22,6 +22,7 @@ namespace OptionsPattern.Controllers
         [HttpGet("config")]
         public IActionResult Get()
         {
+            //Directly reading from _configuration. Not ideal since we're exposing entire _configuration. Once can read whatever values they want from here.
             var city = _configuration.GetValue<string>("WeatherOptions:City");
             var state = _configuration.GetValue<string>("WeatherOptions:State");
             var temperature = _configuration.GetValue<int>("WeatherOptions:Temperature");
@@ -38,6 +39,7 @@ namespace OptionsPattern.Controllers
         [HttpGet("options")]
         public IActionResult GetFromOptionsPattern()
         {
+            //Better way using IOptions interface.
             var response = new
             {
                 options = new { _options.City, _options.State, _options.Temperature, _options.Summary },
