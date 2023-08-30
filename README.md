@@ -1,4 +1,4 @@
-#.NET Core - Options Pattern
+# .NET Core - Options Pattern
 Options Pattern implementation with .NET Core
 
 2 ways to read configuration:
